@@ -1,3 +1,10 @@
+html {
+  background: radial-gradient(at top left, blue, red);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +17,138 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub {
+  display: flex;
+  width: 100vw;
+}
+
+.sub-side {
+  display: flex;
+  min-width: 15vw;
+}
+
+.sub-main {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  min-width: 75vw;
+  min-height: 50vh;
+  margin-left: .5em;
+  background: rgb(240, 248, 255, .5);
+  border: 1px solid black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: rgb(240, 248, 255, .5);
+  border: 1px solid black;
+  margin-bottom: 1em;
+}
+
+.preview {
+  
+  
+}
+
+.preview-section {
+  display: flex;
+}
+
+.preview-section > * {
+  min-width: 20vw;
+  max-width: 40vw;
+  border: 1px solid rgb(0, 255, 255, .3);
+  padding: 1em;
+}
+
+.preview-section-footer {
+  width: 100%;
+  border: 1px solid rgb(0, 255, 255, .3);
+  padding: 1em;
+}
+
+.schools {
+  display: flex;
+}
+
+.schools > * {
+  padding: 1em;
+  margin-right: 1em;
+  border-right: 1px solid rgb(0, 255, 255, .3);
+}
+
+.side-nav {
+  background: rgb(240, 248, 255, .5);
+  width: 20vw;
+  height: 80vh;
+  border: 1px solid black;
+  margin-right: .5em;
+  padding-top: 3em;
+}
+
+.icon {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.nav-icon {
+  background: url("./menu-icon.svg");
+  background-size: cover;
+}
+
+.nav-item {
+  padding: 1em;
+  border-bottom: 1px solid rgb(255, 0, 0, .3);
+
+}
+
+.nav-item:hover {
+  background: rgb(255, 0, 0, .3);
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text] {
+  padding: 1em;
+  margin: .5em;
+}
+
+input[type=submit], input[type=button] {
+  border: 1px solid black;
+  width: 5em;
+  padding: 1em;
+  margin: .5em;
+  background: none;
+}
+
+input[type=submit]:hover, input[type=button]:hover {
+  background: rgb(255, 0, 0, .3);
+}
+
+.button-box {
+  display: flex;
+}
+
+li {
+  border-bottom: .5px solid rgb(0, 255, 255, .3);
 }
